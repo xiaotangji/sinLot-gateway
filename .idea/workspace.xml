@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5059057c-38bf-4b32-aee7-6204efcbcb53" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/thingsboard_gateway/db_access/device_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/thingsboard_gateway/db_access/device_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thingsboard_gateway/db_access/sqlitedao.py" beforeDir="false" afterPath="$PROJECT_DIR$/thingsboard_gateway/db_access/sqlitedao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thingsboard_gateway/network/net_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/thingsboard_gateway/network/net_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thingsboard_gateway/web/collect_api_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/thingsboard_gateway/web/collect_api_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thingsboard_gateway/web/network_api_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/thingsboard_gateway/web/network_api_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thingsboard_gateway/web/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/thingsboard_gateway/web/routes.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="1wywGQPW3u4shrB2BgZCCW2npyj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/thingsboard_gateway/web" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pythonProject\sinIoT-gateway\thingsboard_gateway\web" />
+      <recent name="D:\pythonProject\sinIoT-gateway\thingsboard_gateway\db_access" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="tb_gateway" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sinIoT-gateway" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/thingsboard_gateway" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/thingsboard_gateway/tb_gateway.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tb_gateway" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\pythonProject\sinIoT-gateway" />
+          <option name="myCopyRoot" value="D:\pythonProject\sinIoT-gateway" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\pythonProject\sinIoT-gateway" />
+          <option name="myCopyRoot" value="D:\pythonProject\sinIoT-gateway" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5059057c-38bf-4b32-aee7-6204efcbcb53" name="Changes" comment="" />
+      <created>1629444041979</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629444041979</updated>
+      <workItem from="1629444043692" duration="1309000" />
+      <workItem from="1629445807584" duration="5906000" />
+      <workItem from="1629679404444" duration="22418000" />
+      <workItem from="1629765426789" duration="19596000" />
+      <workItem from="1629852317653" duration="7498000" />
+      <workItem from="1629938624591" duration="9401000" />
+      <workItem from="1630026072370" duration="13832000" />
+      <workItem from="1630283801099" duration="20994000" />
+      <workItem from="1630370208582" duration="16039000" />
+      <workItem from="1630456970638" duration="612000" />
+      <workItem from="1630457620730" duration="16172000" />
+      <workItem from="1630543356172" duration="15636000" />
+      <workItem from="1630629652091" duration="20346000" />
+      <workItem from="1630888853131" duration="16087000" />
+      <workItem from="1630975336823" duration="11383000" />
+      <workItem from="1631061838223" duration="1904000" />
+      <workItem from="1631065677891" duration="2976000" />
+      <workItem from="1631148027759" duration="2350000" />
+    </task>
+    <task id="LOCAL-00001" summary="路由">
+      <created>1629446454201</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1629446454201</updated>
+    </task>
+    <task id="LOCAL-00002" summary="post改成get">
+      <created>1629450290253</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629450290253</updated>
+    </task>
+    <task id="LOCAL-00003" summary="docker接口">
+      <created>1629772439083</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1629772439083</updated>
+    </task>
+    <task id="LOCAL-00004" summary="接口修改">
+      <created>1630046518280</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1630046518280</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="路由" />
+    <MESSAGE value="get" />
+    <MESSAGE value="post改成get" />
+    <MESSAGE value="docker接口" />
+    <MESSAGE value="接口修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="接口修改" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sinIoT_gateway$tb_gateway.coverage" NAME="tb_gateway Coverage Results" MODIFIED="1631151352123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/thingsboard_gateway" />
+  </component>
+</project>

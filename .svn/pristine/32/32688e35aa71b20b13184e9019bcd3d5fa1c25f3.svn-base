@@ -1,0 +1,100 @@
+from thingsboard_gateway.db_access.dao_base import DaoBase
+from thingsboard_gateway.db_access.sqlitedao import SqliteDao
+import thingsboard_gateway.gateway.global_var as global_var
+
+
+class DeviceDao(DaoBase):
+    def __init__(self):
+        super().__init__("device")
+
+    def get_one_by_id(self, device_id):
+        result = self.dao.search_table(self.table_name, {'id': device_id})
+        if result:
+            return result[0]
+        else:
+            return None
+
+    def get_one(self, device_name):
+        return self.dao.search_table(self.table_name, {'device_name': device_name})
+
+    def get_all(self):
+        return self.dao.search_table(self.table_name, {})
+
+    def get_device_id(self, device_name):
+        result = self.dao.search_table(self.table_name, {"device_name": device_name})
+        if result:
+            return int(result[0]["id"])
+        else:
+            return None
+
+    def get_device_parameter(self, device_name):
+        result = self.dao.search_table(self.table_name, {"device_name": device_name})
+        if result:
+            return result[0]["json"]
+        else:
+            return None
+
+    def get_connector_name(self, device_name):
+        result = self.dao.search_table(self.table_name, {"device_name": device_name})
+        if result:
+            return result[0]["connector_name"]
+        else:
+            return None
+
+    def get_device_name_list(self, connector_name):
+        result = self.dao.search_table(self.table_name, {"connector_name": connector_name})
+        if result:
+            device_name_list = [v['device_name'] for v in result]
+            return device_name_list
+        else:
+            return {}
+
+    def get_device_name_all_list(self):
+        sql = "SELECT distinct device_name from {}".format(self.table_name)
+        return self.dao.fetch(sql)
+
+    def selectDeviceIdByDeviceName(self, device_name):
+        sql = "SELECT id from {} where device_name = {}".format(self.table_name, '"' + device_name + '"')
+        return self.dao.fetch(sql)
+
+    def selectJsonFromDeviceByDeviceName(self, deviceName):
+        sql = "select json from {} where device_name = {}".format(self.table_name, '"' + deviceName + '"')
+        return self.dao.fetch(sql)
+
+    def get_count_by_name(self, device_name):
+        if device_name != '':
+            sql = "select count(*) from {} where device_name = {}".format(self.table_name, '"' + device_name + '"')
+            result = self.dao.fetch(sql)
+            return result[0]['count(*)']
+        else:
+            sql = "select count(*) from {}".format(self.table_name)
+            result = self.dao.fetch(sql)
+            return result[0]['count(*)']
+
+    def selectAllFromDevice(self, deviceName, sqlStartIndex, sqlNumber, sortField, sortType):
+        sql = "select * from {} where 1=1".format(self.table_name)
+        if deviceName is not None and len(deviceName) != 0:
+            sql += " and device_name='{}'".format(deviceName)
+        if sortField is not None and len(sortField) != 0:
+            sql += " order by {}".format(sortField)
+        if sortType is not None and len(sortType) != 0:
+            sql += " {}".format(sortType)
+        if sqlStartIndex is not None:
+            sql += " limit {}".format(sqlStartIndex)
+        if sqlNumber is not None:
+            sql += ",{}".format(sqlNumber)
+        return self.dao.fetch(sql)
+
+    def delete(self, device_name):
+        return self.dao.delete_rows(self.table_name, {"device_name": device_name})
+
+    def update(self, device_dict):
+        self.dao.update_row(self.table_name, device_dict, {"device_name": device_dict['device_name']})
+        return 1
+
+    def selectJsonUpdateJsonRpcJsonFromDeviceByDeviceName(self, devicename):
+        sql = "select json,updateJson,rpcJson from {} where 1=1".format(self.table_name)
+        if devicename is not None and len(devicename) != 0:
+            sql += " and device_name='{}'".format(devicename)
+        return self.dao.fetch(sql)
+

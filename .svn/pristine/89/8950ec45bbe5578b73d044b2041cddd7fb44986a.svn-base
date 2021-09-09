@@ -1,0 +1,144 @@
+{
+  "server": {
+    "type": "binary",
+    "host": "192.168.3.39",
+    "port": 6000,
+    "timeout": 35,
+    "method": "socket",
+    "byteOrder": "BIG",
+    "devices": [
+      {
+        "unitId": 1,
+        "deviceName": "Plc Sensor",
+        "attributesPollPeriod": 5000,
+        "timeseriesPollPeriod": 5000,
+        "sendDataOnlyOnChange": true,
+        "connectAttemptTimeMs": 5000,
+        "connectAttemptCount": 5,
+        "waitAfterFailedAttemptsMs": 300000,
+        "attributes": [
+          {
+            "tag": "bool_read",
+            "type": "Bool",
+            "functionCode": "read",
+            "objectsCount": 1,
+            "address": "M200"
+          },
+          {
+            "tag": "int16_read",
+            "type": "Int16",
+            "functionCode": "read",
+            "objectsCount": 1,
+            "address": "D200"
+          },
+          {
+            "tag": "uint16_read",
+            "type": "UInt16",
+            "functionCode": "read",
+            "objectsCount": 1,
+            "address": "D202"
+          },
+          {
+            "tag": "int32_read",
+            "type": "Int32",
+            "functionCode": "read",
+            "objectsCount": 1,
+            "address": "D210"
+          },
+          {
+            "tag": "int32_read_divider",
+            "type": "Int32",
+            "functionCode": "read",
+            "objectsCount": 1,
+            "address": "D210",
+            "divider": 10
+          },
+          {
+            "tag": "int32_read_multiplier",
+            "type": "Int32",
+            "functionCode": "read",
+            "objectsCount": 1,
+            "address": "D210",
+            "multiplier": 10
+          },
+          {
+            "tag": "uint32_read",
+            "type": "UInt32",
+            "functionCode": "read",
+            "objectsCount": 1,
+            "address": "D214"
+          },
+          {
+            "tag": "int64_read",
+            "type": "Int64",
+            "functionCode": "read",
+            "objectsCount": 1,
+            "address": "D220"
+          }
+      ],
+      "timeseries": [
+          {
+            "tag": "fload_read",
+            "type": "Float",
+            "functionCode": "read",
+            "objectsCount": 1,
+            "address": "D230"
+          },
+          {
+            "tag": "double_read",
+            "type": "Double",
+            "functionCode": "read",
+            "objectsCount": 1,
+            "address": "D240"
+          },
+          {
+            "tag": "string_read",
+            "type": "String",
+            "functionCode": "read",
+            "objectsCount": 1,
+            "address": "D250"
+          }
+        ],
+        "attributeUpdates": [
+          {
+            "tag": "shared_attribute_write",
+            "type": "Int32",
+            "functionCode": "write",
+            "objectsCount": 1,
+            "address": "D300"
+          }
+        ],
+        "rpc": [
+          {
+            "tag": "setValue",
+            "type": "bits",
+            "functionCode": "read",
+            "objectsCount": 1,
+            "address": 41
+          },
+          {
+            "tag": "getValue",
+            "type": "bits",
+            "functionCode": "read",
+            "objectsCount": 1,
+            "address": 42
+          },
+          {
+            "tag": "setCPUFanSpeed",
+            "type": "32int",
+            "functionCode": "read",
+            "objectsCount": 2,
+            "address": 43
+          },
+          {
+            "tag":"getCPULoad",
+            "type": "32int",
+            "functionCode": "read",
+            "objectsCount": 2,
+            "address": 45
+          }
+        ]
+      }
+    ]
+  }
+}

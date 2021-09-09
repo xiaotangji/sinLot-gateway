@@ -1,0 +1,3 @@
+
+class ConnectorExtension(object):
+    pass

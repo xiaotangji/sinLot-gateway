@@ -1,0 +1,88 @@
+thingsboard:
+  host: localhost
+  port: 1883
+  remoteShell: false
+  remoteConfiguration: false
+  security:
+    accessToken: wlgDBGxcIrXJtN7tuRfv
+  qos: 1
+db:
+  #datafile: \\10.3.5.105\Share\gateway.db
+  datafile: /home/samba/share/gateway.db
+storage:
+  type: memory
+  read_records_count: 100
+  max_records_count: 100000
+#  type: file
+#  data_folder_path: ./data/
+#  max_file_count: 10
+#  max_read_records_count: 10
+#  max_records_per_file: 10000
+
+use_connectors_from_db: true
+connectors:
+#  -
+#    name: MQTT Broker Connector
+#    type: mqtt
+#    configuration: mqtt.json
+
+  -
+    name: Modbus Connector
+    type: modbus
+    configuration: modbus.json
+
+#   -
+#    name: Mitsubishi Plc Connector
+#    type: mitsubishi
+#    configuration: mitsubishi_plc.json
+
+#  -
+#    name: Modbus Connector
+#    type: modbus
+#    configuration: modbus_serial.json
+#
+#  -
+#    name: OPC-UA Connector
+#    type: opcua
+#    configuration: opcua.json
+#
+#  -
+#    name: BLE Connector
+#    type: ble
+#    configuration: ble.json
+#
+#  -
+#    name: REQUEST Connector
+#    type: request
+#    configuration: request.json
+#
+#  -
+#    name: CAN Connector
+#    type: can
+#    configuration: can.json
+#
+#  -
+#    name: BACnet Connector
+#    type: bacnet
+#    configuration: bacnet.json
+#
+#  -
+#    name: ODBC Connector
+#    type: odbc
+#    configuration: odbc.json
+#
+#  -
+#    name: REST Connector
+#    type: rest
+#    configuration: rest.json
+#
+#  -
+#    name: SNMP Connector
+#    type: snmp
+#    configuration: snmp.json
+#
+#  -
+#    name: Custom Serial Connector
+#    type: serial
+#    configuration: custom_serial.json
+#    class: CustomSerialConnector
